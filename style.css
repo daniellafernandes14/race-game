@@ -1,6 +1,21 @@
+body {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  text-shadow: 1px 3px #01ffe4;
+}
+
+h2 {
+  text-shadow: 1px 3px #01ffe4;
+}
+
 #player-1 td.active {
   background-image: url('images/blue-car.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
@@ -9,6 +24,7 @@
 #player-2 td.active {
   background-image: url('images/green-car.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
@@ -20,6 +36,8 @@
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
+  border-right: none;
+  border-top: none;
 }
 
 #player-2 td.finish {
@@ -28,10 +46,51 @@
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
+  border-right: none;
+  border-top: none;
 }
 
-td {
-  /* border: 2px solid black; */
+.game td {
+  border-right: 2px dashed black;
+  width: 150px;
+  height: 150px;
+}
+
+#player-2 td {
+  border-top: 2px dashed black;
+}
+
+#player-1 {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  line-height: 150px;
+}
+
+#player-2 {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  line-height: 150px;
+}
+
+/* RULES CARD */
+.rules-card {
+  text-align: center;
+}
+
+/* SCORE CARD */
+.score {
+  margin-top: 20px;
+}
+
+.score td {
+  border: 2px solid black;
+  height: 40px;
   width: 100px;
-  height: 100px;
+}
+
+.score table {
+  margin-left: auto;
+  margin-right: auto;
 }
