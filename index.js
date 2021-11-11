@@ -13,7 +13,9 @@ const moveForward = (player) => {
     // window.location.reload();
     start1.classList.add('active');
     start2.classList.add('active');
-    middle.classList.remove('active');
+    middle.forEach(row => {
+      row.classList.remove('active');
+    })
   }
 };
 
