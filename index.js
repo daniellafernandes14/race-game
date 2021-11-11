@@ -30,7 +30,8 @@ document.addEventListener("keyup", moveCars);
 // COUNTER
 let counterDisplayElem1 = document.querySelector('.counter-display1');
 let counterDisplayElem2 = document.querySelector('.counter-display2');
-let count = 0;
+let count1 = 1;
+let count2 = 1;
 
 const updateDisplay = () => {
   const car1 = document.querySelector(`#player-1 td.active`).getBoundingClientRect().x;
@@ -39,10 +40,10 @@ const updateDisplay = () => {
   const finish2 = document.getElementById('finish-2').getBoundingClientRect().x;
   // counterDisplayElem.forEach(element => {
     if(car1 === finish1) {
-      counterDisplayElem1.innerText = count + 1;
+      counterDisplayElem1.innerText = count1++;
       console.log(counterDisplayElem1[0]);
     } else if(car2 === finish2) {
-      counterDisplayElem2.innerText = count + 1;
+      counterDisplayElem2.innerText = count2++;
       console.log(counterDisplayElem2[0]);
     }
   // })
