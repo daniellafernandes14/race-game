@@ -1,0 +1,40 @@
+#player-1 td.active {
+  background-image: url('images/blue-car.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+#player-2 td.active {
+  background-image: url('images/green-car.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+#player-1 td.finish {
+  background-image: url('images/flag.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border-left: 2px solid black;
+}
+
+#player-2 td.finish {
+  background-image: url('images/flag.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+td {
+  /* border: 2px solid black; */
+  /* width: 100px;
+  height: 100px; */
+}
